@@ -8,3 +8,4 @@ read me.
 >git push -u origin master
 >git status
 >git add RAEDME.md
+testing global settings
