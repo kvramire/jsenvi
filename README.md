@@ -57,7 +57,7 @@ grunt > gulp* > npm scripts***
 
 1. to start script: npm start
 2. to run other scripts: npm run "script name"
-3. 
+3. OR npm run all
 
 
 
