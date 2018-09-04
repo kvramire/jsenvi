@@ -59,7 +59,10 @@ grunt > gulp* > npm scripts***
 2. to run other scripts: npm run "script name"
 3. OR npm run all
 
-
+Transpiling javascript
+===============================================
+Babel, TypeScfipt and Elm, etc...
+Babel transpiles from Latest spec to ES5 spec.
 
 
 
