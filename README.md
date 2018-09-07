@@ -63,13 +63,64 @@ Transpiling javascript
 ===============================================
 Babel, TypeScfipt and Elm, etc...
 Babel transpiles from Latest spec to ES5 spec.
+> Setup Babel to transpile the code to ES5
+> add .babelrc, replace node with babel-node in npm scripts commands to transpile ES6 import syntax to ES5 javascript.
 
+Bundling Application code with js bundler(s)
+===================================================
+> Common JS doesnot work in web browsers.
+> There are at least five module formats in js.
+> 1) IIFE, 2) AMD - Asynchronous Module Definition 3) Common JS (CJS) 4) Universal Module Definiton (UMD) 5) ES6 Modules
+> Use ES6 module  in future projects.
+> Tools available - Browserify (simple), Webpack (comprehensive), Rollup (tree-shaking, performance) and JSPM (runtime loader, package manager)
+> We will use Webpack for this starter kit. Webpack is more than just JS. It handles css, images, fonts, html; bundle splitting and hot module reloading.
+> webpack 2 offers tree shaking.
+> webpack looks to be clear leader among the bundlers.
 
+Sourcemaps
+=================================================
+> Debug
+> debugger
 
+Linting - coding standards
+=================================================
+> Enforce coding consistency and Avoid Mistakes
+> avoif confirm/alert, trailing commas, Globals
+> extra parantheseis, Overwriting a function, assignment in conditional, missing default case in switch, debugger / console.log, etc
 
+> Linters - JSLint > JSHint, ESLint*, 
+> ESLint is a defacto standard, use ethis.
+> TypeScript: TSlint is the only linter.
+> ESLint Config: Config format? Which built-in rules? Warnings or errors? Which plugins? and use preset instead?
+> eslint-plugin-react, eslint-plugin-angular
+> ESlint doesn't watch files. Get around, eslint-loader vs eslint-watch*
+> ESlint doesn't support latest js features. Get around, Run ESLint directly vs babel-eslint
 
+> Lint via an Automated Build Process: continuous feedback at one place, universal configuration, should be aprt of CI.
 
+> sample at Githib Gist https://gist.github.com/coryhouse/61f866c7174220777899bcfff03dab7f
 
+> "rules" : { "no-console": 1} -- 0 off, 1 Warning, 2 Error
+
+Testing and CI
+=============================================
+> Testing startegies - 
+> Framework, Assertion Library, Helper Libraries, Where to run tests, Where to place tests and When to run tests
+> Frameworks: Mocha, Jasmine, Tape, QUnit, AVA, Jest
+> Assertion library: chai, 
+> Helper Library: JSDOM - Simlate the browser's DOM, Run DOM-related tests without a brower. Cheerio - jquery for the server, Query virtual DOM using jQuery selectors
+> Where to run tests:  Browser - Karma, Testem, Headless Browser - PhantomJS, In-memory DOM - JSDOM, 
+> Tests location: Centralized vs alongside
+> Naming Test Files: (46%) fileName.spec.js, (39%) fileName.test.js, (15%) other
+> run?- run unit tests every time you save
+> unit tests (sinle) vs integration tests (multiple)
+
+> Test Infrastrucutre: 1. Mocha Framework, 2. Chai Assertion Library, 3. JSDOM Helper Libraries, 4. Node to run tests,  5. pleace tests Alongside, and 6. run tests upon Save.
+
+Contunuation Integration
+====================================================
+> Travis, Appveyor, jenkins, CircleCI, semaphore, snapCI
+> 
 
 
 
