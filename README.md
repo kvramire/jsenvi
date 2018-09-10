@@ -119,11 +119,39 @@ Testing and CI
 
 Contunuation Integration
 ====================================================
-> Travis, Appveyor, jenkins, CircleCI, semaphore, snapCI
+> Travis*, Appveyor, Jenkins*, CircleCI, semaphore, snapCI> let's try with Travis*, Appveyor,
+> Travis run on unix server. It is integrated with github. it is great if repo is on github.
+> Windows: Download AppVeyor from https://www.appveyor.com 
+> AppVeyor run on Windows server. It is integrated with github. it is great if repo is on github.
+ 
+
+HTTP Calls:
+===================================================================
+> Library option based Node, Browser and Node & Browser
+> node: http i slow level api comes from node; and request is another popular high level library
+> browser: XMLHttpRequest (more code), jQuery (abstraction and simple), Framework-based, Fetch*
+> Node & Browser: isomorphic-fetch, xhr, SuperAgent and Axios*
+
+
+Polyfill:
+=================================
+
+Mocking HTTP?
+=======================
+> Unit testing
+> instant response
+> Keep working when services are down
+> rapid prototyping
+> avoid inter-team bottlenecks
+> work offline
+> tools - Nock, 
+> will use JSON Schema faker for schema declaration; 
+> to generate random data use faker.js,
+> to serve data via API let's use JSON Server.
+Mocking Librarues
+===============================
+> JSON Schema - json-schema.org
 > 
-
-
-
 
 
 
