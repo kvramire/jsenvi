@@ -186,6 +186,12 @@ Minification-
 > dead code elimination / Tree-shaking
 > debug via source map
 
+Bundle Splitting
+==============================
+> speed initial page load
+> avoid re-downloading 
+> Webpack can be used for bundle splitting
+>
 
 
 
