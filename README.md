@@ -153,6 +153,38 @@ Mocking Librarues
 > JSON Schema - json-schema.org
 > 
 
+Project Structure:
+=====================================
+> Directory strucutre and file naming
+> Framework usage
+> Testing
+> Mock API
+> Automated deployment
+Codifies decisions
+Interactive examples of working with starter kit
+
+never include java script in <script> </script> tag-
+downsides- can't test this, lint this, reuse this, transpile this, import explicit dependencies
+> advice: javascript belongs to .js file.
+> don't write javascript code from server side code. pass json data from server side and write logic from a javascript file.
+> organize code by feature -
+> extract logic to POJOs
+
+Production Build
+============================
+> Minification
+> Sourcemaps
+> Dynamic HTML
+> Cache busting
+> Bundle splitting
+> Error logging
+
+Minification-
+> shortens variable and function names
+> removes comments
+> removes whitespace and new lines
+> dead code elimination / Tree-shaking
+> debug via source map
 
 
 
