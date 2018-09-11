@@ -3,20 +3,20 @@
   "version": "1.0.0",
   "description": "JavaScript development environment Pluralsight course by Cory House",
   "scripts": {
-    "prestart": "babel-node buildScripts/startMessage",
+    "prestart": "babel-node buildscripts/startMessage",
     "start":"npm-run-all --parallel open:src lint-watch test-watch start-mockapi",
-    "open:src": "babel-node buildScripts/srcServer.js",
+    "open:src": "babel-node buildscripts/srcServer.js",
     "lint": "esw webpack.config.* src buildscripts --color",
     "lint-watch": "npm run lint -- --watch",
     "security-check": "npm audit",
-    "test":"mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
+    "test":"mocha --reporter progress buildscripts/testSetup.js \"src/**/*.test.js\"",
     "test-watch": "npm run test -- --watch",
-    "prestart-mockapi": "babel-node buildScripts/generateMockData",
+    "prestart-mockapi": "babel-node buildscripts/generateMockData",
     "start-mockapi": "json-server --watch src/api/db.json --port 3001",
     "clean-dist": "rimraf ./dist && mkdir dist",
     "prebuild": "npm-run-all clean-dist test lint",
-    "build": "babel-node buildScripts/build.js",
-    "postbuild": "babel-node buildScripts/ditServer.js"
+    "build": "babel-node buildscripts/build.js",
+    "postbuild": "babel-node buildscripts/distServer.js"
 
   },
   "author": "Cory House",
